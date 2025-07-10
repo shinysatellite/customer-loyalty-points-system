@@ -23,6 +23,9 @@ switch (operation.toLowerCase()) {
     case "earn":
         system.earnPoints(customerId, points);
         break;
+    case "redeem":
+        system.redeemPoints(customerId, points);
+        break;
     default:
         console.error("Invalid operation. Supported operations: earn, redeem");
         break;
