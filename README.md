@@ -46,7 +46,7 @@ Use the following commands format:
 npm run start <operation> <customerId> <points>
 ```
 
-### <operation> is one of:
+### operation is one of:
 
 - earn: Add points to the customer’s balance.
 - redeem: Redeem points from the customer's balance.
