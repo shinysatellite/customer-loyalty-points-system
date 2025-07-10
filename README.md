@@ -33,12 +33,12 @@ git clone <your_repo_link_here>
 cd customer-loyalty-points-system
 ```
 
-**Step 1: Clone this repository**
+**Step 2: Clone this repository**
 ```bash
 npm install
 ```
 
-## How to Run
+## 🏃 How to Run
 
 Use the following commands format:
 
@@ -70,3 +70,4 @@ The balances are persisted between command executions in the data.json file. (No
 
 - Connect to a database for scalable persistence solutions (MongoDB, PostgreSQL, etc)
 - Develop a web-based interface or REST API.
+- Add the authentication using Oauth or JWT
