@@ -1,3 +1,5 @@
+import { LoyaltyPointsSystem } from "./LoyaltyPointsSystem";
+
 const args = process.argv.slice(2);
 
 if (args.length !== 3) {
@@ -9,5 +11,19 @@ if (args.length !== 3) {
 }
 
 const [operation, customerId, pointsStr] = args;
+const points = parseInt(pointsStr, 10);
+const system = new LoyaltyPointsSystem();
 
-console.log(operation, customerId, pointsStr);
+if (isNaN(points) || points <= 0) {
+    console.error("Points should be a positive integer value.");
+    process.exit(1);
+}
+
+switch (operation.toLowerCase()) {
+    case "earn":
+        system.earnPoints(customerId, points);
+        break;
+    default:
+        console.error("Invalid operation. Supported operations: earn, redeem");
+        break;
+}
