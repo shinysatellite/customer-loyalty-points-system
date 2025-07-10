@@ -13,14 +13,16 @@ A simple command-line based customer loyalty points management application built
 - JSON file persistence for storing points balances
 
 ## 📂 Project Structure
+
+```plaintext
 customer-loyalty-points-system/
 ├── package.json
 ├── tsconfig.json
 ├── data.json                  # Storage file for persistent balance
 └── src/
-├── LoyaltyPointsSystem.ts # Core functionality
-└── index.ts               # CLI entry-point
-
+   ├── LoyaltyPointsSystem.ts # Core functionality
+   └── index.ts               # CLI entry-point
+```
 
 ## ⬇️ Install & Setup
 
@@ -61,7 +63,7 @@ npm run start earn user123 100
 npm run start redeem user123 50
 ```
 
-# Data Persistence
+# 📝Data Persistence
 The balances are persisted between command executions in the data.json file. (No points are lost between runs.)
 
 # 🛠️ Future Enhancement Ideas:
